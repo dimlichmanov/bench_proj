@@ -1,0 +1,151 @@
+Elapsed Time: 183.908s
+    Clockticks: 7,792,993,000,000
+    Instructions Retired: 1,863,810,000,000
+    CPI Rate: 4.181
+     | The CPI may be too high. This could be caused by issues such as memory
+     | stalls, instruction starvation, branch misprediction or long latency
+     | instructions. Explore the other hardware-related metrics to identify what
+     | is causing high CPI.
+     |
+    MUX Reliability: 0.999
+    Retiring: 10.3% of Pipeline Slots
+        Light Operations: 10.2% of Pipeline Slots
+        Heavy Operations: 0.1% of Pipeline Slots
+            Microcode Sequencer: 0.1% of Pipeline Slots
+                Assists: 7.8% of Pipeline Slots
+    Front-End Bound: 4.6% of Pipeline Slots
+        Front-End Latency: 3.9% of Pipeline Slots
+            ICache Misses: 0.2% of Clockticks
+            ITLB Overhead: 0.0% of Clockticks
+            Branch Resteers: 0.1% of Clockticks
+            DSB Switches: 0.0% of Clockticks
+            Length Changing Prefixes: 0.0% of Clockticks
+            MS Switches: 0.1% of Clockticks
+        Front-End Bandwidth: 0.7% of Pipeline Slots
+            Front-End Bandwidth MITE: 0.2% of Clockticks
+            Front-End Bandwidth DSB: 0.2% of Clockticks
+            (Info) DSB Coverage: 3.1%
+    Bad Speculation: 0.1% of Pipeline Slots
+        Branch Mispredict: 0.0% of Pipeline Slots
+        Machine Clears: 0.1% of Pipeline Slots
+    Back-End Bound: 85.0% of Pipeline Slots
+     | A significant portion of pipeline slots are remaining empty. When
+     | operations take too long in the back-end, they introduce bubbles in the
+     | pipeline that ultimately cause fewer pipeline slots containing useful
+     | work to be retired per cycle than the machine is capable to support. This
+     | opportunity cost results in slower execution. Long-latency operations
+     | like divides and memory operations can cause this, as can too many
+     | operations being directed to a single execution port (for example, more
+     | multiply operations arriving in the back-end per cycle than the execution
+     | unit can support).
+     |
+        Memory Bound: 76.0% of Pipeline Slots
+         | The metric value is high. This can indicate that the significant
+         | fraction of execution pipeline slots could be stalled due to demand
+         | memory load and stores. Use Memory Access analysis to have the metric
+         | breakdown by memory hierarchy, memory bandwidth information,
+         | correlation by memory objects.
+         |
+            L1 Bound: 2.3% of Clockticks
+                DTLB Overhead: 9.8% of Clockticks
+                Loads Blocked by Store Forwarding: 0.0% of Clockticks
+                Lock Latency: 0.0% of Clockticks
+                Split Loads: 0.0% of Clockticks
+                4K Aliasing: 0.1% of Clockticks
+                FB Full: 100.0% of Clockticks
+            L2 Bound: N/A with HT on
+            L3 Bound: N/A with HT on
+                Contested Accesses: 0.0% of Clockticks
+                Data Sharing: 0.0% of Clockticks
+                L3 Latency: 100.0% of Clockticks
+                 | This metric shows a fraction of cycles with demand load
+                 | accesses that hit the L3 cache under unloaded scenarios
+                 | (possibly L3 latency limited). Avoiding private cache misses
+                 | (i.e. L2 misses/L3 hits) will improve the latency, reduce
+                 | contention with sibling physical cores and increase
+                 | performance. Note the value of this node may overlap with its
+                 | siblings.
+                 |
+                SQ Full: 0.0% of Clockticks
+                 | This metric measures fraction of cycles where the Super Queue
+                 | (SQ) was full taking into account all request-types and both
+                 | hardware SMT threads. The Super Queue is used for requests to
+                 | access the L2 cache or to go out to the Uncore.
+                 |
+            DRAM Bound: N/A with HT on
+                Memory Bandwidth: N/A with HT on
+                Memory Latency: N/A with HT on
+                    Local DRAM: 32.7% of Clockticks
+                     | The number of CPU stalls on loads from the local memory
+                     | exceeds the threshold. Consider caching data to improve
+                     | the latency and increase the performance.
+                     |
+                    Remote DRAM: 0.0% of Clockticks
+                    Remote Cache: 0.0% of Clockticks
+            Store Bound: 0.1% of Clockticks
+                Store Latency: 97.6% of Clockticks
+                False Sharing: 0.0% of Clockticks
+                Split Stores: 0.0% of Clockticks
+                DTLB Store Overhead: 0.1% of Clockticks
+        Core Bound: 9.0% of Pipeline Slots
+            Divider: 0.0% of Clockticks
+            Port Utilization: 9.7% of Clockticks
+                Cycles of 0 Ports Utilized: 29.9% of Clockticks
+                Cycles of 1 Port Utilized: 17.4% of Clockticks
+                Cycles of 2 Ports Utilized: 7.4% of Clockticks
+                Cycles of 3+ Ports Utilized: 5.1% of Clockticks
+                    ALU Operation Utilization: 4.3% of Clockticks
+                        Port 0: 2.0% of Clockticks
+                        Port 1: 2.8% of Clockticks
+                        Port 5: 3.7% of Clockticks
+                        Port 6: 8.8% of Clockticks
+                    Load Operation Utilization: 0.0% of Clockticks
+                        Port 2: 14.5% of Clockticks
+                        Port 3: 16.5% of Clockticks
+                    Store Operation Utilization: 54.4% of Clockticks
+                        Port 4: 54.4% of Clockticks
+                        Port 7: 0.0% of Clockticks
+    Average CPU Frequency: 3.104 GHz 
+    Total Thread Count: 14
+    Paused Time: 0s
+Effective Physical Core Utilization: 48.7% (6.813 out of 14)
+ | The metric value is low, which may signal a poor physical CPU cores
+ | utilization caused by:
+ |     - load imbalance
+ |     - threading runtime overhead
+ |     - contended synchronization
+ |     - thread/process underutilization
+ |     - incorrect affinity that utilizes logical cores instead of physical
+ |       cores
+ | Explore sub-metrics to estimate the efficiency of MPI and OpenMP parallelism
+ | or run the Locks and Waits analysis to identify parallel bottlenecks for
+ | other parallel runtimes.
+ |
+    Effective Logical Core Utilization: 48.6% (13.612 out of 28)
+     | The metric value is low, which may signal a poor logical CPU cores
+     | utilization. Consider improving physical core utilization as the first
+     | step and then look at opportunities to utilize logical cores, which in
+     | some cases can improve processor throughput and overall performance of
+     | multi-threaded applications.
+     |
+Collection and Platform Info
+    Application Command Line: ./bin/omp_random_access_np_STD 
+    User Name: vadim
+    Operating System: 3.10.0-957.1.3.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
+    Computer Name: n50003.10p.parallel.ru
+    Result Size: 520.1 MB 
+    Collection start time: 09:50:41 17/06/2022 UTC
+    Collection stop time: 09:53:45 17/06/2022 UTC
+    Collector Type: Event-based sampling driver
+    CPU
+        Name: Intel(R) Xeon(R) E5/E7 v3 Processor code named Haswell
+        Frequency: 2.600 GHz 
+        Logical CPU Count: 28
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: not detected
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.

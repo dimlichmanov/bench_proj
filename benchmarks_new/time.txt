@@ -1,0 +1,48 @@
+stencil_2D
+
+real	0m0,345s
+user	0m0,529s
+sys	0m0,166s
+stencil_2D
+./make_omp.sh: строка 88: ./bin/omp_stencil_2D_np_STD: Нет такого файла или каталога
+
+real	0m0,000s
+user	0m0,000s
+sys	0m0,000s
+stencil_2D
+
+real	0m0,217s
+user	0m0,382s
+sys	0m0,068s
+stencil_2D
+./make_omp.sh: строка 91: ./bin/omp_stencil_2D_np_STD: Нет такого файла или каталога
+
+real	0m0,000s
+user	0m0,000s
+sys	0m0,000s
+stencil_2D
+
+real	0m0,215s
+user	0m0,369s
+sys	0m0,078s
+stencil_2D
+
+real	0m0,229s
+user	0m0,380s
+sys	0m0,082s
+stencil_2D
+
+real	0m0,222s
+user	0m0,379s
+sys	0m0,077s
+stencil_2D
+
+real	0m0,433s
+user	0m0,759s
+sys	0m0,137s
+stencil_2D
+
+real	0m0,421s
+user	0m0,760s
+sys	0m0,129s
+stencil_2D

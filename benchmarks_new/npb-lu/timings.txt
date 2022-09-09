@@ -1,0 +1,60 @@
+
+
+ NAS Parallel Benchmarks 3.0 structured OpenMP C version - LU Benchmark
+
+ Size: 162x162x162
+ Iterations: 250
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class C
+ Accuracy setting for epsilon =  1.0000000000000e-08
+ Comparison of RMS-norms of residual
+           0   1.0376698032354e+04 1.0376698032354e+04 7.0118235988920e-16
+           1   8.9221245880101e+02 8.9221245880101e+02 1.7838976719082e-15
+           2   2.5623881458266e+03 2.5623881458266e+03 1.0648207648645e-15
+           3   2.1919434385783e+03 2.1919434385783e+03 8.2985234542623e-16
+           4   1.7807805726106e+04 1.7807805726106e+04 1.0214562262880e-15
+ Comparison of RMS-norms of solution error
+           0   2.1598639971695e+02 2.1598639971695e+02 8.4217775097397e-15
+           1   1.5578955923986e+01 1.5578955923986e+01 8.7797588812242e-15
+           2   5.4131886307720e+01 5.4131886307721e+01 1.2863617519007e-14
+           3   4.8226264315404e+01 4.8226264315405e+01 5.1567327688825e-15
+           4   4.5590291004324e+02 4.5590291004325e+02 2.4936633484272e-14
+ Comparison of surface integral
+               6.6640455357218e+01 6.6640455357218e+01 4.2649332568412e-16
+ Verification Successful
+
+
+ LU Benchmark Completed
+ Class           =                        C
+ Size            =              162x162x162
+ Iterations      =                      250
+ Threads         =                       14
+ Time in seconds =                    71.88
+ Mop/s total     =                 28365.06
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =           3.0 structured
+ Compile date    =              24 Aug 2021
+
+ Compile options:
+    CC           = icc
+    CLINK        = icc 
+    C_LIB        = (none)
+    C_INC        = -I../common
+    CFLAGS       = -O3 -openmp -lpthread -mcmodel=large
+    CLINKFLAGS   = -openmp -lpthread -mcmodel=large
+    RAND         = (none)

@@ -1,0 +1,828 @@
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (2097152);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (2097152);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (262144000);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (262144000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (32768000000);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (32768000000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (2097152);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (2097152);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (1);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (262144000);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (262144000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (1);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+stencil_3D.h:14:26: missed: couldn't vectorize loop
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:8:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+stencil_3D.h:14:26: missed: statement clobbers memory: _26 = rand_r (&myseed);
+stencil_3D.h:15:26: missed: statement clobbers memory: _32 = rand_r (&myseed);
+stencil_3D.h:39:29: missed: couldn't vectorize loop
+stencil_3D.h:39:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:32:34: missed: couldn't vectorize loop
+stencil_3D.h:32:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:34:38: missed: couldn't vectorize loop
+stencil_3D.h:34:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:39:51: missed: couldn't vectorize loop
+stencil_3D.h:39:51: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:41:55: missed: Loop costings may not be worthwhile.
+stencil_3D.h:41:55: missed: couldn't vectorize loop
+stencil_3D.h:29:13: missed: not vectorized: unsupported use in stmt.
+stencil_3D.h:29:13: note: vectorized 0 loops in function.
+stencil_3D.h:62:35: missed: couldn't vectorize loop
+stencil_3D.h:62:35: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:58:34: missed: couldn't vectorize loop
+stencil_3D.h:58:34: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:60:38: missed: couldn't vectorize loop
+stencil_3D.h:60:38: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+stencil_3D.h:75:51: missed: couldn't vectorize loop
+stencil_3D.h:75:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:65:51: missed: couldn't vectorize loop
+stencil_3D.h:65:51: missed: not vectorized: control flow in loop.
+stencil_3D.h:55:13: note: vectorized 0 loops in function.
+stencil_3D.h:8:13: missed: couldn't vectorize loop
+stencil_3D.h:8:13: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: vectorized 1 loops in function.
+stencil_3D_main.h:18:82: missed: statement clobbers memory: _11 = operator new [] (32768000000);
+stencil_3D_main.h:19:82: missed: statement clobbers memory: _13 = operator new [] (32768000000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z7InitSeqIdEvPT_S1_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+stencil_3D.h:8:13: note: SLPing BB part
+stencil_3D.h:8:13: note: ------>vectorizing SLP node starting from: .omp_data_o.10.a = a_368;
+stencil_3D.h:8:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:8:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:8:13: note: transform store. ncopies = 1
+stencil_3D.h:8:13: note: add new stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: created new init_stmt: vect_cst__319 = _309;
+stencil_3D.h:8:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.10.a
+stencil_3D.h:8:13: note: created &.omp_data_o.10.a
+stencil_3D.h:8:13: note: add new stmt: MEM[(double * *)&.omp_data_o.10] = vect_cst__319;
+stencil_3D.h:8:13: note: vectorizing stmts using SLP.
+stencil_3D.h:8:13: optimized: basic block part vectorized using 16 byte vectors
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _68 = operator new [] (50331648);
+../../locutils_new/utils.h:65:18: note: basic block vectorized
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_68);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_288);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_rectangleIdEvPT_S1_m._omp_fn.0, &.omp_data_o.15, 0, 0);
+stencil_3D.h:29:13: note: SLPing BB part
+stencil_3D.h:29:13: note: ------>vectorizing SLP node starting from: .omp_data_o.15.a = a_368;
+stencil_3D.h:29:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:29:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:29:13: note: transform store. ncopies = 1
+stencil_3D.h:29:13: note: created new init_stmt: vect_cst__158 = _215;
+stencil_3D.h:29:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.15.a
+stencil_3D.h:29:13: note: created &.omp_data_o.15.a
+stencil_3D.h:29:13: note: add new stmt: MEM[(double * *)&.omp_data_o.15] = vect_cst__158;
+stencil_3D.h:29:13: note: vectorizing stmts using SLP.
+stencil_3D.h:29:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z12Kernel_crossIdEvPT_S1_m._omp_fn.0, &.omp_data_o.19, 0, 0);
+stencil_3D.h:55:13: note: SLPing BB part
+stencil_3D.h:55:13: note: ------>vectorizing SLP node starting from: .omp_data_o.19.a = a_368;
+stencil_3D.h:55:13: note: vect_is_simple_use: operand a_368 = PHI <_11(5), b_147(50)>, type of def: external
+stencil_3D.h:55:13: note: vect_is_simple_use: operand b_147 = PHI <_13(5), a_368(50)>, type of def: external
+stencil_3D.h:55:13: note: transform store. ncopies = 1
+stencil_3D.h:55:13: note: created new init_stmt: vect_cst__152 = _375;
+stencil_3D.h:55:13: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.19.a
+stencil_3D.h:55:13: note: created &.omp_data_o.19.a
+stencil_3D.h:55:13: note: add new stmt: MEM[(double * *)&.omp_data_o.19] = vect_cst__152;
+stencil_3D.h:55:13: note: vectorizing stmts using SLP.
+stencil_3D.h:55:13: optimized: basic block part vectorized using 16 byte vectors
+stencil_3D_main.h:16:6: note: basic block vectorized
+stencil_3D.h:96:25: missed: statement clobbers memory: fprintf (stderr.13_67, "unexpected core type in stencil 2D");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _43 = std::basic_ostream<char>::_M_insert<double> (&cout, _52);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_43, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_108);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _124 = OBJ_TYPE_REF(_118;_108->6) (_108, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _103 = std::basic_ostream<char>::put (_43, prephitmp_313);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_103);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _45 = std::basic_ostream<char>::_M_insert<double> (&cout, _56);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_45, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_127);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _143 = OBJ_TYPE_REF(_137;_127->6) (_127, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _95 = std::basic_ostream<char>::put (_45, prephitmp_37);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_95);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _47 = std::basic_ostream<char>::_M_insert<double> (&cout, _60);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_47, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_146);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _162 = OBJ_TYPE_REF(_156;_146->6) (_146, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _87 = std::basic_ostream<char>::put (_47, prephitmp_340);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _171 = std::basic_ostream<char>::_M_insert<double> (&cout, _170);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_171, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_203);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _219 = OBJ_TYPE_REF(_213;_203->6) (_203, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _198 = std::basic_ostream<char>::put (_171, prephitmp_96);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_198);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _174 = std::basic_ostream<char>::_M_insert<double> (&cout, _173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_174, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_222);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _238 = OBJ_TYPE_REF(_232;_222->6) (_222, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _190 = std::basic_ostream<char>::put (_174, prephitmp_191);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_190);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _177 = std::basic_ostream<char>::_M_insert<double> (&cout, _176);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_177, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_249);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _265 = OBJ_TYPE_REF(_259;_249->6) (_249, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _247 = std::basic_ostream<char>::put (_177, prephitmp_8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_247);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _183 = std::basic_ostream<char>::_M_insert<double> (&cout, prephitmp_169);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_276);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _292 = OBJ_TYPE_REF(_286;_276->6) (_276, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _135 = std::basic_ostream<char>::put (_183, prephitmp_363);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_135);
+stencil_3D_main.h:72:11: missed: statement clobbers memory: operator delete [] (b_153);
+stencil_3D_main.h:73:11: missed: statement clobbers memory: operator delete [] (a_210);
+stencil_3D_main.h:78:15: missed: statement clobbers memory: CallKernel (1);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);

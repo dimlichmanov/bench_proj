@@ -1,0 +1,46 @@
+npb-mg
+
+real	0m17.799s
+user	2m26.492s
+sys	0m1.665s
+npb-ft
+
+real	0m36.390s
+user	5m31.161s
+sys	0m3.278s
+npb-cg
+
+real	0m29.112s
+user	6m36.514s
+sys	0m2.003s
+npb-ep
+
+real	0m22.162s
+user	5m8.277s
+sys	0m0.211s
+npb-sp
+
+real	3m50.634s
+user	52m54.166s
+sys	0m39.353s
+hpcg
+
+real	0m46.896s
+user	10m11.492s
+sys	0m39.351s
+npb-lu
+
+real	1m16.241s
+user	17m43.838s
+sys	0m3.191s
+npb-is
+./make_omp.sh: line 86:  1940 Segmentation fault      ./bin/omp_$PROG_NAME""_np_STD > $OUTPUT
+
+real	0m13.122s
+user	0m13.055s
+sys	0m0.068s
+npb-bt
+
+real	3m59.960s
+user	55m43.274s
+sys	0m12.420s

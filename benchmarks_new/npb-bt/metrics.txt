@@ -1,0 +1,12 @@
+# started on Wed Sep  8 14:50:16 2021
+
+
+ Performance counter stats for 'system wide':
+
+    10217407976436      CPU_CLK_UNHALTED.THREAD                                     
+     6681870988258      inst_retired.any_p                                          
+      151858812352      l1d.replacement                                             
+       47690070938      longest_lat_cache.miss                                      
+
+     235.648383567 seconds time elapsed
+

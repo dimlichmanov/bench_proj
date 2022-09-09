@@ -1,0 +1,233 @@
+edges_count_in_outgoing_csr: 134217728
+edges_count_in_incoming_csr: 134217728
+edges_count_in_outgoing_ve: 134219360
+edges_count_in_incoming_ve: 134218720
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 594.292 ms
+Wall (graph500) perf: 225.845 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.601250 s
+local_bw: 28.992344 Gb/s
+local_flops: 223.231051 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.995703 ms
+Wall (graph500) perf: 228.263110 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584339 s
+local_bw: 29.687832 Gb/s
+local_flops: 226.415157 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 605.670506 ms
+Wall (graph500) perf: 221.601889 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.601730 s
+local_bw: 28.829799 Gb/s
+local_flops: 225.283200 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.256397 ms
+Wall (graph500) perf: 228.161952 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584564 s
+local_bw: 29.676431 Gb/s
+local_flops: 226.347887 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.517104 ms
+Wall (graph500) perf: 228.060879 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584828 s
+local_bw: 29.663012 Gb/s
+local_flops: 226.971242 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.002417 ms
+Wall (graph500) perf: 228.260504 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584329 s
+local_bw: 29.688378 Gb/s
+local_flops: 227.420810 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.000176 ms
+Wall (graph500) perf: 228.261374 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584298 s
+local_bw: 29.689913 Gb/s
+local_flops: 227.744690 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.535691 ms
+Wall (graph500) perf: 228.441829 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.583854 s
+local_bw: 29.712525 Gb/s
+local_flops: 228.009734 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.315973 ms
+Wall (graph500) perf: 228.138847 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584631 s
+local_bw: 29.673037 Gb/s
+local_flops: 228.182810 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.229116 ms
+Wall (graph500) perf: 228.172534 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584552 s
+local_bw: 29.677037 Gb/s
+local_flops: 228.324522 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 589.105908 ms
+Wall (graph500) perf: 227.832935 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.585427 s
+local_bw: 29.632679 Gb/s
+local_flops: 228.409674 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.486391 ms
+Wall (graph500) perf: 228.072782 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584762 s
+local_bw: 29.666366 Gb/s
+local_flops: 228.502230 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.489460 ms
+Wall (graph500) perf: 228.071592 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584811 s
+local_bw: 29.663871 Gb/s
+local_flops: 228.579134 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.322836 ms
+Wall (graph500) perf: 228.136186 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584546 s
+local_bw: 29.677312 Gb/s
+local_flops: 228.652461 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.883696 ms
+Wall (graph500) perf: 227.918906 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.585185 s
+local_bw: 29.644905 Gb/s
+local_flops: 228.699447 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.991692 ms
+Wall (graph500) perf: 228.264668 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584327 s
+local_bw: 29.688461 Gb/s
+local_flops: 228.761495 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.583567 ms
+Wall (graph500) perf: 228.035126 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584893 s
+local_bw: 29.659733 Gb/s
+local_flops: 228.803285 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.527651 ms
+Wall (graph500) perf: 228.444955 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.583828 s
+local_bw: 29.713840 Gb/s
+local_flops: 228.863534 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.033467 ms
+Wall (graph500) perf: 228.248451 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584346 s
+local_bw: 29.687506 Gb/s
+local_flops: 228.906826 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 604.694672 ms
+Wall (graph500) perf: 221.959502 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.600817 s
+local_bw: 28.873651 Gb/s
+local_flops: 228.624635 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.117698 ms
+Wall (graph500) perf: 228.215761 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584460 s
+local_bw: 29.681690 Gb/s
+local_flops: 228.672966 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 588.683457 ms
+Wall (graph500) perf: 227.996432 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.584972 s
+local_bw: 29.655733 Gb/s
+local_flops: 228.707858 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.609598 ms
+Wall (graph500) perf: 228.413097 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.583957 s
+local_bw: 29.707250 Gb/s
+local_flops: 228.756921 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 587.727452 ms
+Wall (graph500) perf: 228.367294 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.583991 s
+local_bw: 29.705537 Gb/s
+local_flops: 228.801366 GFlops
+cache_annil: -18874367
+ --------------------------- SSSP (Dijkstra, all-active, pull) --------------------------- 
+Wall time: 605.959003 ms
+Wall (graph500) perf: 221.496384 MTEPS
+ ------------------------------------------------------------------------------------------ 
+
+local_time: 0.602121 s
+local_bw: 28.811104 Gb/s
+local_flops: 228.559665 GFlops
+avg_time: 0.587233 s
+avg_bw: 29.550398 Gb/s
+avg_flops: 227.929304 GFlops
+flops_per_byte: 0.125000

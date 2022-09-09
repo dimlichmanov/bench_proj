@@ -1,0 +1,6 @@
+test_name,avg_time,avg_bw,avg_flops,flops_per_byte,mem_efficiency,
+random_access|--redundant=0--length=800000000--mode=0--threads=14--radius=8192,0,0,0,0,0,
+
+
+
+

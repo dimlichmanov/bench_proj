@@ -1,0 +1,55 @@
+
+
+ NAS Parallel Benchmarks 3.0 structured OpenMP C version - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size: 162x162x162
+ Iterations: 200   dt:   0.000100
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  1.0000000000000e-08
+ Comparison of RMS-norms of residual
+           0 6.2398116551764e+03 6.2398116551765e+03 8.4538918188450e-15
+           1 5.0793239190426e+02 5.0793239190424e+02 3.1223277182045e-14
+           2 1.5423530093014e+03 1.5423530093014e+03 1.6953299613177e-14
+           3 1.3302387929291e+03 1.3302387929291e+03 3.4869100222437e-14
+           4 1.1604087428436e+04 1.1604087428436e+04 1.0032268590260e-14
+ Comparison of RMS-norms of solution error
+           0 1.6462008369091e+02 1.6462008369091e+02 2.7624050522310e-15
+           1 1.1497107903824e+01 1.1497107903824e+01 5.4076633792685e-15
+           2 4.1207446207461e+01 4.1207446207462e+01 1.7415497177492e-14
+           3 3.7087651059694e+01 3.7087651059694e+01 4.4064486306179e-15
+           4 3.6211053051843e+02 3.6211053051841e+02 3.8930565916706e-14
+ Verification Successful
+
+
+ BT Benchmark Completed
+ Class           =                        C
+ Size            =              162x162x162
+ Iterations      =                      200
+ Threads         =                       14
+ Time in seconds =                   234.62
+ Mop/s total     =                 12216.72
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =           3.0 structured
+ Compile date    =              24 Aug 2021
+
+ Compile options:
+    CC           = icc
+    CLINK        = icc 
+    C_LIB        = (none)
+    C_INC        = -I../common
+    CFLAGS       = -O3 -openmp -lpthread -mcmodel=large
+    CLINKFLAGS   = -openmp -lpthread -mcmodel=large
+    RAND         = (none)

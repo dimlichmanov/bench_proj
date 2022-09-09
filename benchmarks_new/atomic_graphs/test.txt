@@ -1,0 +1,104 @@
+cache_annil: -18874367
+local_time: 0.013463 s
+local_bw: 0.623064 Gb/s
+local_flops: 0.077883 GFlops
+cache_annil: -18874367
+local_time: 0.012221 s
+local_bw: 0.686419 Gb/s
+local_flops: 0.085802 GFlops
+cache_annil: -18874367
+local_time: 0.010534 s
+local_bw: 0.796313 Gb/s
+local_flops: 0.099539 GFlops
+cache_annil: -18874367
+local_time: 0.009624 s
+local_bw: 0.871599 Gb/s
+local_flops: 0.108950 GFlops
+cache_annil: -18874367
+local_time: 0.008711 s
+local_bw: 0.962987 Gb/s
+local_flops: 0.120373 GFlops
+cache_annil: -18874367
+local_time: 0.008012 s
+local_bw: 1.047047 Gb/s
+local_flops: 0.130881 GFlops
+cache_annil: -18874367
+local_time: 0.007409 s
+local_bw: 1.132184 Gb/s
+local_flops: 0.141523 GFlops
+cache_annil: -18874367
+local_time: 0.007064 s
+local_bw: 1.187532 Gb/s
+local_flops: 0.148441 GFlops
+cache_annil: -18874367
+local_time: 0.006887 s
+local_bw: 1.218115 Gb/s
+local_flops: 0.152264 GFlops
+cache_annil: -18874367
+local_time: 0.006700 s
+local_bw: 1.251972 Gb/s
+local_flops: 0.156497 GFlops
+cache_annil: -18874367
+local_time: 0.006511 s
+local_bw: 1.288414 Gb/s
+local_flops: 0.161052 GFlops
+cache_annil: -18874367
+local_time: 0.006324 s
+local_bw: 1.326446 Gb/s
+local_flops: 0.165806 GFlops
+cache_annil: -18874367
+local_time: 0.006109 s
+local_bw: 1.373211 Gb/s
+local_flops: 0.171651 GFlops
+cache_annil: -18874367
+local_time: 0.006028 s
+local_bw: 1.391523 Gb/s
+local_flops: 0.173940 GFlops
+cache_annil: -18874367
+local_time: 0.005942 s
+local_bw: 1.411679 Gb/s
+local_flops: 0.176460 GFlops
+cache_annil: -18874367
+local_time: 0.005793 s
+local_bw: 1.448095 Gb/s
+local_flops: 0.181012 GFlops
+cache_annil: -18874367
+local_time: 0.005734 s
+local_bw: 1.462920 Gb/s
+local_flops: 0.182865 GFlops
+cache_annil: -18874367
+local_time: 0.005792 s
+local_bw: 1.448305 Gb/s
+local_flops: 0.181038 GFlops
+cache_annil: -18874367
+local_time: 0.005756 s
+local_bw: 1.457247 Gb/s
+local_flops: 0.182156 GFlops
+cache_annil: -18874367
+local_time: 0.005758 s
+local_bw: 1.456895 Gb/s
+local_flops: 0.182112 GFlops
+cache_annil: -18874367
+local_time: 0.005785 s
+local_bw: 1.449939 Gb/s
+local_flops: 0.181242 GFlops
+cache_annil: -18874367
+local_time: 0.005730 s
+local_bw: 1.464066 Gb/s
+local_flops: 0.183008 GFlops
+cache_annil: -18874367
+local_time: 0.005758 s
+local_bw: 1.456844 Gb/s
+local_flops: 0.182105 GFlops
+cache_annil: -18874367
+local_time: 0.005774 s
+local_bw: 1.452820 Gb/s
+local_flops: 0.181602 GFlops
+cache_annil: -18874367
+local_time: 0.005756 s
+local_bw: 1.457246 Gb/s
+local_flops: 0.182156 GFlops
+avg_time: 0.007167 s
+avg_bw: 1.244915 Gb/s
+avg_flops: 0.155614 GFlops
+flops_per_byte: 0.125000

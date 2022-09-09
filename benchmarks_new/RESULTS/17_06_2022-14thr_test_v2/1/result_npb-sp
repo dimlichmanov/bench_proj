@@ -1,0 +1,280 @@
+
+
+ NAS Parallel Benchmarks 3.0 structured OpenMP C version - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults Size: 162x162x162
+ Iterations: 400   dt:   0.000670
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class C
+ accuracy setting for epsilon =  1.0000000000000e-08
+ Comparison of RMS-norms of residual
+           0 5.8816915818294e+02 5.8816915818290e+02 7.1323772312167e-14
+           1 2.4544176035691e+02 2.4544176035690e+02 4.3540116116721e-14
+           2 3.2938291918509e+02 3.2938291918510e+02 3.4515098112215e-14
+           3 3.0819249718906e+02 3.0819249718910e+02 1.3703987150494e-13
+           4 4.5972237991758e+02 4.5972237991760e+02 4.0432658446639e-14
+ Comparison of RMS-norms of solution error
+           0 2.5981205001830e-01 2.5981205001830e-01 8.5463551405484e-16
+           1 2.5908889223145e-02 2.5908889223150e-02 2.0073037235157e-13
+           2 5.1328864163197e-02 5.1328864163200e-02 6.4618443056171e-14
+           3 4.8060734194539e-02 4.8060734194540e-02 2.7142990547214e-14
+           4 5.4833774913005e-01 5.4833774913010e-01 9.9008149612711e-14
+ Verification Successful
+
+
+ SP Benchmark Completed
+ Class           =                        C
+ Size            =              162x162x162
+ Iterations      =                      400
+ Threads         =                       14
+ Time in seconds =                   229.28
+ Mop/s total     =                  6324.60
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =           3.0 structured
+ Compile date    =              24 Aug 2021
+
+ Compile options:
+    CC           = icc
+    CLINK        = icc 
+    C_LIB        = (none)
+    C_INC        = -I../common
+    CFLAGS       = -O3 -openmp -lpthread -mcmodel=large
+    CLINKFLAGS   = -openmp -lpthread -mcmodel=large
+    RAND         = (none)
+Elapsed Time: 231.368s
+    Clockticks: 9,952,228,000,000
+    Instructions Retired: 7,104,344,000,000
+    CPI Rate: 1.401
+     | The CPI may be too high. This could be caused by issues such as memory
+     | stalls, instruction starvation, branch misprediction or long latency
+     | instructions. Explore the other hardware-related metrics to identify what
+     | is causing high CPI.
+     |
+    MUX Reliability: 1.000
+    Retiring: 21.2% of Pipeline Slots
+        Light Operations: 17.5% of Pipeline Slots
+        Heavy Operations: 3.7% of Pipeline Slots
+            Microcode Sequencer: 3.7% of Pipeline Slots
+                Assists: 0.0% of Pipeline Slots
+    Front-End Bound: 3.7% of Pipeline Slots
+        Front-End Latency: 2.1% of Pipeline Slots
+            ICache Misses: 0.2% of Clockticks
+            ITLB Overhead: 0.0% of Clockticks
+            Branch Resteers: 0.5% of Clockticks
+            DSB Switches: 0.3% of Clockticks
+            Length Changing Prefixes: 0.0% of Clockticks
+            MS Switches: 4.4% of Clockticks
+        Front-End Bandwidth: 1.6% of Pipeline Slots
+            Front-End Bandwidth MITE: 1.7% of Clockticks
+            Front-End Bandwidth DSB: 10.5% of Clockticks
+            (Info) DSB Coverage: 72.5%
+    Bad Speculation: 0.6% of Pipeline Slots
+        Branch Mispredict: 0.4% of Pipeline Slots
+        Machine Clears: 0.1% of Pipeline Slots
+    Back-End Bound: 74.6% of Pipeline Slots
+     | A significant portion of pipeline slots are remaining empty. When
+     | operations take too long in the back-end, they introduce bubbles in the
+     | pipeline that ultimately cause fewer pipeline slots containing useful
+     | work to be retired per cycle than the machine is capable to support. This
+     | opportunity cost results in slower execution. Long-latency operations
+     | like divides and memory operations can cause this, as can too many
+     | operations being directed to a single execution port (for example, more
+     | multiply operations arriving in the back-end per cycle than the execution
+     | unit can support).
+     |
+        Memory Bound: 51.0% of Pipeline Slots
+         | The metric value is high. This can indicate that the significant
+         | fraction of execution pipeline slots could be stalled due to demand
+         | memory load and stores. Use Memory Access analysis to have the metric
+         | breakdown by memory hierarchy, memory bandwidth information,
+         | correlation by memory objects.
+         |
+            L1 Bound: 5.2% of Clockticks
+                DTLB Overhead: 0.7% of Clockticks
+                Loads Blocked by Store Forwarding: 0.2% of Clockticks
+                Lock Latency: 0.2% of Clockticks
+                Split Loads: 0.0% of Clockticks
+                4K Aliasing: 0.2% of Clockticks
+                FB Full: 42.6% of Clockticks
+            L2 Bound: N/A with HT on
+            L3 Bound: N/A with HT on
+                Contested Accesses: 5.5% of Clockticks
+                 | Issues: There is a high number of contested accesses to
+                 | cachelines modified by another core.
+                 | 
+                 | Tips: Consider either using techniques suggested for other
+                 | long latency load events (for example, LLC Miss) or reducing
+                 | the contested accesses. To reduce contested accesses, first
+                 | identify the cause. If it is a synchronization, try
+                 | increasing synchronization granularity. If it is true data
+                 | sharing, consider data privatization and reduction. If it is
+                 | false data sharing, restructure the data to place contested
+                 | variables into distinct cachelines. This may increase the
+                 | working set due to padding, but false sharing can always be
+                 | avoided.
+                 |
+                Data Sharing: 5.1% of Clockticks
+                 | Issue: Significant data sharing by different cores is
+                 | detected.
+                 | 
+                 | Tips:
+                 | 
+                 | 1. Examine the Contested Accesses metric to determine whether
+                 | the major component of data sharing is due to contested
+                 | accesses or simple read sharing. Read sharing is a lower
+                 | priority than Contested Accesses or issues such as LLC Misses
+                 | and Remote Accesses.
+                 | 
+                 | 2. If simple read sharing is a performance bottleneck,
+                 | consider changing data layout across threads or rearranging
+                 | computation. However, this type of tuning may not be
+                 | straightforward and could bring more serious performance
+                 | issues back.
+                 |
+                L3 Latency: 18.8% of Clockticks
+                 | This metric shows a fraction of cycles with demand load
+                 | accesses that hit the L3 cache under unloaded scenarios
+                 | (possibly L3 latency limited). Avoiding private cache misses
+                 | (i.e. L2 misses/L3 hits) will improve the latency, reduce
+                 | contention with sibling physical cores and increase
+                 | performance. Note the value of this node may overlap with its
+                 | siblings.
+                 |
+                SQ Full: 10.6% of Clockticks
+                 | This metric measures fraction of cycles where the Super Queue
+                 | (SQ) was full taking into account all request-types and both
+                 | hardware SMT threads. The Super Queue is used for requests to
+                 | access the L2 cache or to go out to the Uncore.
+                 |
+            DRAM Bound: N/A with HT on
+                Memory Bandwidth: N/A with HT on
+                Memory Latency: N/A with HT on
+                    Local DRAM: 63.6% of Clockticks
+                     | The number of CPU stalls on loads from the local memory
+                     | exceeds the threshold. Consider caching data to improve
+                     | the latency and increase the performance.
+                     |
+                    Remote DRAM: 0.0% of Clockticks
+                    Remote Cache: 0.0% of Clockticks
+                     | The number of CPU stalls on loads from the remote cache
+                     | exceeds the threshold. This is often caused by non-
+                     | optimal NUMA memory allocations.
+                     |
+            Store Bound: 22.8% of Clockticks
+             | Issue: CPU was stalled on store operations for a significant
+             | fraction of cycles.
+             | 
+             | Tips: Consider False Sharing analysis as your next step.
+             |
+                Store Latency: 62.2% of Clockticks
+                 | This metric represents a fraction of cycles the CPU spent
+                 | handling long-latency store misses (missing the 2nd level
+                 | cache). Consider avoiding/reducing unnecessary (or easily
+                 | loadable/computable) memory store. Note that this metric
+                 | value may be highlighted due to a Lock Latency issue.
+                 |
+                False Sharing: 1.0% of Clockticks
+                 | Issue: For a significant fraction of cycles CPU was stalled
+                 | on store operations to a shared cache line.
+                 | 
+                 | Tips: Use padding to make threads access different lines.
+                 |
+                Split Stores: 0.0% of Clockticks
+                DTLB Store Overhead: 0.3% of Clockticks
+        Core Bound: 23.6% of Pipeline Slots
+         | This metric represents how much Core non-memory issues were of a
+         | bottleneck. Shortage in hardware compute resources, or dependencies
+         | software's instructions are both categorized under Core Bound. Hence
+         | it may indicate the machine ran out of an OOO resources, certain
+         | execution units are overloaded or dependencies in program's data- or
+         | instruction- flow are limiting the performance (e.g. FP-chained long-
+         | latency arithmetic operations).
+         |
+            Divider: 1.2% of Clockticks
+            Port Utilization: 28.7% of Clockticks
+             | Issue: A significant fraction of cycles was stalled due to Core
+             | non-divider-related issues.
+             | 
+             | Tips: Use vectorization to reduce pressure on the execution ports
+             | as multiple elements are calculated with same uOp.
+             |
+                Cycles of 0 Ports Utilized: 19.3% of Clockticks
+                Cycles of 1 Port Utilized: 6.5% of Clockticks
+                Cycles of 2 Ports Utilized: 4.8% of Clockticks
+                Cycles of 3+ Ports Utilized: 8.0% of Clockticks
+                    ALU Operation Utilization: 13.5% of Clockticks
+                        Port 0: 9.5% of Clockticks
+                        Port 1: 12.6% of Clockticks
+                        Port 5: 9.4% of Clockticks
+                        Port 6: 22.4% of Clockticks
+                    Load Operation Utilization: 12.4% of Clockticks
+                        Port 2: 14.2% of Clockticks
+                        Port 3: 14.4% of Clockticks
+                    Store Operation Utilization: 6.7% of Clockticks
+                        Port 4: 6.7% of Clockticks
+                        Port 7: 3.0% of Clockticks
+    Average CPU Frequency: 3.100 GHz 
+    Total Thread Count: 14
+    Paused Time: 0s
+Effective Physical Core Utilization: 58.4% (8.177 out of 14)
+ | The metric value is low, which may signal a poor physical CPU cores
+ | utilization caused by:
+ |     - load imbalance
+ |     - threading runtime overhead
+ |     - contended synchronization
+ |     - thread/process underutilization
+ |     - incorrect affinity that utilizes logical cores instead of physical
+ |       cores
+ | Explore sub-metrics to estimate the efficiency of MPI and OpenMP parallelism
+ | or run the Locks and Waits analysis to identify parallel bottlenecks for
+ | other parallel runtimes.
+ |
+    Effective Logical Core Utilization: 29.3% (8.195 out of 28)
+     | The metric value is low, which may signal a poor logical CPU cores
+     | utilization. Consider improving physical core utilization as the first
+     | step and then look at opportunities to utilize logical cores, which in
+     | some cases can improve processor throughput and overall performance of
+     | multi-threaded applications.
+     |
+Collection and Platform Info
+    Application Command Line: ./bin/omp_npb-sp_np_STD 
+    User Name: vadim
+    Operating System: 3.10.0-957.1.3.el7.x86_64 NAME="CentOS Linux" VERSION="7 (Core)" ID="centos" ID_LIKE="rhel fedora" VERSION_ID="7" PRETTY_NAME="CentOS Linux 7 (Core)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:centos:centos:7" HOME_URL="https://www.centos.org/" BUG_REPORT_URL="https://bugs.centos.org/"  CENTOS_MANTISBT_PROJECT="CentOS-7" CENTOS_MANTISBT_PROJECT_VERSION="7" REDHAT_SUPPORT_PRODUCT="centos" REDHAT_SUPPORT_PRODUCT_VERSION="7" 
+    Computer Name: n50003.10p.parallel.ru
+    Result Size: 630.6 MB 
+    Collection start time: 10:41:58 17/06/2022 UTC
+    Collection stop time: 10:45:49 17/06/2022 UTC
+    Collector Type: Event-based sampling driver
+    CPU
+        Name: Intel(R) Xeon(R) E5/E7 v3 Processor code named Haswell
+        Frequency: 2.600 GHz 
+        Logical CPU Count: 28
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: not detected
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.

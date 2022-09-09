@@ -1,0 +1,5 @@
+npb-sp
+
+real	4m13.100s
+user	57m41.062s
+sys	1m4.309s

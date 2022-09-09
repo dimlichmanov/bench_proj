@@ -1,0 +1,46 @@
+npb-mg
+
+real	0m17.906s
+user	2m24.873s
+sys	0m1.646s
+npb-ft
+
+real	0m36.284s
+user	5m24.582s
+sys	0m2.995s
+npb-cg
+
+real	0m28.244s
+user	6m24.609s
+sys	0m1.671s
+npb-ep
+
+real	0m21.803s
+user	5m3.528s
+sys	0m0.215s
+npb-sp
+
+real	3m50.885s
+user	52m57.017s
+sys	0m39.877s
+hpcg
+
+real	0m46.466s
+user	10m5.788s
+sys	0m39.182s
+npb-lu
+
+real	1m13.066s
+user	17m0.609s
+sys	0m2.013s
+npb-is
+./make_omp.sh: line 86:  4458 Segmentation fault      ./bin/omp_$PROG_NAME""_np_STD > $OUTPUT
+
+real	0m13.604s
+user	0m13.528s
+sys	0m0.076s
+npb-bt
+
+real	3m56.406s
+user	54m54.183s
+sys	0m11.876s

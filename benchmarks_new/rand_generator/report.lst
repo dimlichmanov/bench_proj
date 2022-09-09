@@ -1,0 +1,246 @@
+rand_generator.h:18:55: missed: couldn't vectorize loop
+rand_generator.h:15:13: missed: not vectorized: number of iterations cannot be computed.
+rand_generator.h:21:25: missed: couldn't vectorize loop
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:15:13: note: vectorized 0 loops in function.
+rand_generator.h:15:13: missed: statement clobbers memory: _34 = __atomic_load_8 (_32, 0);
+rand_generator.h:15:13: missed: statement clobbers memory: _39 = __sync_val_compare_and_swap_8 (_32, _3, _37);
+rand_generator.h:15:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:35:26: missed: couldn't vectorize loop
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+rand_generator.h:29:13: note: vectorized 0 loops in function.
+rand_generator.h:29:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+../../locutils_new/utils.h:64:41: missed: couldn't vectorize loop
+../../locutils_new/utils.h:64:41: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+rand_generator_main.h:16:6: note: vectorized 1 loops in function.
+rand_generator_main.h:18:43: missed: statement clobbers memory: _5 = operator new [] (6400000000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _50 = operator new [] (50331648);
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_50);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_114);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_reductionIdEvPT_m._omp_fn.0, &.omp_data_o.4, 0, 0);
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z14Kernel_storageIdEvPT_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+rand_generator.h:52:25: missed: statement clobbers memory: fprintf (stderr.0_49, "Wrong core type of random generator!\n");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _25 = std::basic_ostream<char>::_M_insert<double> (&cout, _34);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_25, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_91);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _107 = OBJ_TYPE_REF(_101;_91->6) (_91, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _86 = std::basic_ostream<char>::put (_25, prephitmp_325);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_86);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _38);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_27, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_110);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _126 = OBJ_TYPE_REF(_120;_110->6) (_110, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _78 = std::basic_ostream<char>::put (_27, prephitmp_296);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_78);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _29 = std::basic_ostream<char>::_M_insert<double> (&cout, _42);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_29, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_129);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _145 = OBJ_TYPE_REF(_139;_129->6) (_129, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _70 = std::basic_ostream<char>::put (_29, prephitmp_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_70);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _154 = std::basic_ostream<char>::_M_insert<double> (&cout, _153);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_154, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_186);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _202 = OBJ_TYPE_REF(_196;_186->6) (_186, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _181 = std::basic_ostream<char>::put (_154, prephitmp_182);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_181);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _157 = std::basic_ostream<char>::_M_insert<double> (&cout, _156);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_157, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_205);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _221 = OBJ_TYPE_REF(_215;_205->6) (_205, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _173 = std::basic_ostream<char>::put (_157, prephitmp_258);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _160 = std::basic_ostream<char>::_M_insert<double> (&cout, _159);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_160, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_232);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _248 = OBJ_TYPE_REF(_242;_232->6) (_232, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _230 = std::basic_ostream<char>::put (_160, prephitmp_24);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_230);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _166 = std::basic_ostream<char>::_M_insert<double> (&cout, 1.25e-1);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_259);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _275 = OBJ_TYPE_REF(_269;_259->6) (_259, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _257 = std::basic_ostream<char>::put (_166, prephitmp_59);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_257);
+rand_generator_main.h:53:11: missed: statement clobbers memory: operator delete [] (_5);
+rand_generator_main.h:58:12: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+rand_generator.h:18:55: missed: couldn't vectorize loop
+rand_generator.h:15:13: missed: not vectorized: number of iterations cannot be computed.
+rand_generator.h:21:25: missed: couldn't vectorize loop
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:15:13: note: vectorized 0 loops in function.
+rand_generator.h:15:13: missed: statement clobbers memory: _34 = __atomic_load_8 (_32, 0);
+rand_generator.h:15:13: missed: statement clobbers memory: _39 = __sync_val_compare_and_swap_8 (_32, _3, _37);
+rand_generator.h:15:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:35:26: missed: couldn't vectorize loop
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+rand_generator.h:29:13: note: vectorized 0 loops in function.
+rand_generator.h:29:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+../../locutils_new/utils.h:64:41: missed: couldn't vectorize loop
+../../locutils_new/utils.h:64:41: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+rand_generator_main.h:16:6: note: vectorized 1 loops in function.
+rand_generator_main.h:18:43: missed: statement clobbers memory: _5 = operator new [] (6400000000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _50 = operator new [] (50331648);
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_50);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_114);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_reductionIdEvPT_m._omp_fn.0, &.omp_data_o.4, 0, 0);
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z14Kernel_storageIdEvPT_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+rand_generator.h:52:25: missed: statement clobbers memory: fprintf (stderr.0_49, "Wrong core type of random generator!\n");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _25 = std::basic_ostream<char>::_M_insert<double> (&cout, _34);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_25, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_91);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _107 = OBJ_TYPE_REF(_101;_91->6) (_91, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _86 = std::basic_ostream<char>::put (_25, prephitmp_325);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_86);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _38);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_27, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_110);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _126 = OBJ_TYPE_REF(_120;_110->6) (_110, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _78 = std::basic_ostream<char>::put (_27, prephitmp_296);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_78);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _29 = std::basic_ostream<char>::_M_insert<double> (&cout, _42);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_29, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_129);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _145 = OBJ_TYPE_REF(_139;_129->6) (_129, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _70 = std::basic_ostream<char>::put (_29, prephitmp_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_70);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _154 = std::basic_ostream<char>::_M_insert<double> (&cout, _153);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_154, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_186);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _202 = OBJ_TYPE_REF(_196;_186->6) (_186, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _181 = std::basic_ostream<char>::put (_154, prephitmp_182);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_181);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _157 = std::basic_ostream<char>::_M_insert<double> (&cout, _156);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_157, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_205);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _221 = OBJ_TYPE_REF(_215;_205->6) (_205, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _173 = std::basic_ostream<char>::put (_157, prephitmp_258);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _160 = std::basic_ostream<char>::_M_insert<double> (&cout, _159);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_160, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_232);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _248 = OBJ_TYPE_REF(_242;_232->6) (_232, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _230 = std::basic_ostream<char>::put (_160, prephitmp_24);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_230);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _166 = std::basic_ostream<char>::_M_insert<double> (&cout, 1.25e-1);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_259);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _275 = OBJ_TYPE_REF(_269;_259->6) (_259, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _257 = std::basic_ostream<char>::put (_166, prephitmp_59);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_257);
+rand_generator_main.h:53:11: missed: statement clobbers memory: operator delete [] (_5);
+rand_generator_main.h:58:12: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+rand_generator.h:18:55: missed: couldn't vectorize loop
+rand_generator.h:15:13: missed: not vectorized: number of iterations cannot be computed.
+rand_generator.h:21:25: missed: couldn't vectorize loop
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:15:13: note: vectorized 0 loops in function.
+rand_generator.h:15:13: missed: statement clobbers memory: _34 = __atomic_load_8 (_32, 0);
+rand_generator.h:15:13: missed: statement clobbers memory: _39 = __sync_val_compare_and_swap_8 (_32, _3, _37);
+rand_generator.h:15:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:21:25: missed: statement clobbers memory: _27 = rand_r (&myseed);
+rand_generator.h:35:26: missed: couldn't vectorize loop
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+rand_generator.h:29:13: note: vectorized 0 loops in function.
+rand_generator.h:29:13: missed: statement clobbers memory: __builtin_GOMP_barrier ();
+rand_generator.h:35:26: missed: statement clobbers memory: _23 = rand_r (&myseed);
+../../locutils_new/utils.h:64:41: missed: couldn't vectorize loop
+../../locutils_new/utils.h:64:41: missed: not vectorized: control flow in loop.
+../../locutils_new/utils.h:67:21: optimized: loop vectorized using 16 byte vectors
+rand_generator_main.h:16:6: note: vectorized 1 loops in function.
+rand_generator_main.h:18:43: missed: statement clobbers memory: _5 = operator new [] (6400000000);
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/timers.h:22:96: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+../../locutils_new/utils.h:64:41: missed: statement clobbers memory: _50 = operator new [] (50331648);
+../../locutils_new/utils.h:73:12: missed: statement clobbers memory: operator delete [] (_50);
+../../locutils_new/utils.h:75:9: missed: statement clobbers memory: printf ("cache_annil: %d\n", helper_114);
+../../locutils_new/timers.h:26:53: missed: statement clobbers memory: counter.start_time = std::chrono::_V2::steady_clock::now ();
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z16Kernel_reductionIdEvPT_m._omp_fn.0, &.omp_data_o.4, 0, 0);
+rand_generator_main.h:16:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z14Kernel_storageIdEvPT_m._omp_fn.0, &.omp_data_o.10, 0, 0);
+rand_generator.h:52:25: missed: statement clobbers memory: fprintf (stderr.0_49, "Wrong core type of random generator!\n");
+../../locutils_new/timers.h:30:51: missed: statement clobbers memory: counter.end_time = std::chrono::_V2::steady_clock::now ();
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_time: ", 12);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _25 = std::basic_ostream<char>::_M_insert<double> (&cout, _34);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_25, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_91);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _107 = OBJ_TYPE_REF(_101;_91->6) (_91, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _86 = std::basic_ostream<char>::put (_25, prephitmp_325);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_86);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_bw: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _27 = std::basic_ostream<char>::_M_insert<double> (&cout, _38);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_27, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_110);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _126 = OBJ_TYPE_REF(_120;_110->6) (_110, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _78 = std::basic_ostream<char>::put (_27, prephitmp_296);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_78);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "local_flops: ", 13);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _29 = std::basic_ostream<char>::_M_insert<double> (&cout, _42);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_29, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_129);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _145 = OBJ_TYPE_REF(_139;_129->6) (_129, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _70 = std::basic_ostream<char>::put (_29, prephitmp_87);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_70);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_time: ", 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _154 = std::basic_ostream<char>::_M_insert<double> (&cout, _153);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_154, " s", 2);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_186);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _202 = OBJ_TYPE_REF(_196;_186->6) (_186, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _181 = std::basic_ostream<char>::put (_154, prephitmp_182);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_181);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_bw: ", 8);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _157 = std::basic_ostream<char>::_M_insert<double> (&cout, _156);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_157, " Gb/s", 5);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_205);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _221 = OBJ_TYPE_REF(_215;_205->6) (_205, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _173 = std::basic_ostream<char>::put (_157, prephitmp_258);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_173);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "avg_flops: ", 11);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _160 = std::basic_ostream<char>::_M_insert<double> (&cout, _159);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (_160, " GFlops", 7);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_232);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _248 = OBJ_TYPE_REF(_242;_232->6) (_232, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _230 = std::basic_ostream<char>::put (_160, prephitmp_24);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_230);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:570:18: missed: statement clobbers memory: std::__ostream_insert<char, std::char_traits<char> > (&cout, "flops_per_byte: ", 16);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:221:29: missed: statement clobbers memory: _166 = std::basic_ostream<char>::_M_insert<double> (&cout, 1.25e-1);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:876:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_259);
+/opt/software/gcc-9.1/include/c++/9.1.0/bits/locale_facets.h:877:23: missed: statement clobbers memory: _275 = OBJ_TYPE_REF(_269;_259->6) (_259, 10);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:600:19: missed: statement clobbers memory: _257 = std::basic_ostream<char>::put (_166, prephitmp_59);
+/opt/software/gcc-9.1/include/c++/9.1.0/ostream:622:25: missed: statement clobbers memory: std::basic_ostream<char>::flush (_257);
+rand_generator_main.h:53:11: missed: statement clobbers memory: operator delete [] (_5);
+rand_generator_main.h:58:12: missed: statement clobbers memory: CallKernel (0);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: std::ios_base::Init::Init (&__ioinit);
+/opt/software/gcc-9.1/include/c++/9.1.0/iostream:74:25: missed: statement clobbers memory: __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
